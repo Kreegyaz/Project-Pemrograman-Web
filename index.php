@@ -93,7 +93,7 @@ case 'upload-tugas-create':
         break;
     case 'chat-private':
         requireAuth();
-        (new ChatPrivateController($koneksi))->index(); // ⬅ ini harus benar
+        (new ChatPrivateController($koneksi))->index(); 
         break;
     case 'chatPrivate-conversation':
     requireAuth();

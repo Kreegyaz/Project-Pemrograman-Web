@@ -31,11 +31,11 @@
         <a href="kelas.html"
           ><h1 class="bg-blue px-6 py-2 rounded-full">Dashboard</h1></a
         >
-        <a href="chat.html"
+        <a href="index.php?page=chat-private"
           ><h1 class="bg-blue px-6 py-2 rounded-full">Chat</h1></a
         >
       </div>
-      <a href="profile.html">
+      <a href="index.php?page=profile">
         <img
           src="assets/svg/profile-icon.svg"
           alt=""
@@ -74,9 +74,7 @@
       </div>
     </div>
 
-    <div class="container mt-5">
-        <h2 class="mb-4">Halo, <?= htmlspecialchars($_SESSION['user']['nama']) ?> 👋</h2>
-        
+    <div class="container mt-5">        
         <div class="row g-3">
             <a href="index.php?page=jadwal-tugas" class="btn btn-primary">📅 Jadwal Tugas</a>
             

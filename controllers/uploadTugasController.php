@@ -4,14 +4,19 @@ require_once __DIR__ . '/../models/jadwalTugas.php';
 
 class UploadTugasController {
     private $db;
+    
 
     public function __construct($koneksi) {
         $this->db = $koneksi;
     }
 
     public function index() {
-        $model = new UploadTugas($this->db);
-        $uploads = $model->getAll();
+        $model = new JadwalTugas($this->db);
+        $daftar_tugas = $model->getAll();
+        $uploadModel = new UploadTugas($this->db);
+        $riwayat_upload = $uploadModel->getAllByUserId($_SESSION['user']['id']);
+
+
         include __DIR__ . '/../view/uploadTugas/index.php';
     }
 

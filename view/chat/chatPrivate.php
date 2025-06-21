@@ -22,7 +22,7 @@
         <a href="index.php?page=dashboard"
           ><h1 class="bg-blue px-6 py-2 rounded-full">Home</h1></a
         >
-        <a href="kelas.html"
+        <a href="index.php?page=upload-tugas"
           ><h1 class="bg-blue px-6 py-2 rounded-full">Dashboard</h1></a
         >
         <a href="index.php?page=chat-private"

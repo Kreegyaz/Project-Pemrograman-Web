@@ -11,18 +11,17 @@
         <h2 class="mb-4">Halo, <?= htmlspecialchars($_SESSION['user']['nama']) ?> 👋</h2>
         
         <div class="row g-3">
-            <div class="col-6 col-md-3">
-                <a href="index.php?page=jadwal" class="btn btn-primary w-100">📅 Jadwal</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="index.php?page=tugas" class="btn btn-warning w-100">📁 Tugas</a>
-            </div>
+            <a href="index.php?page=jadwal-tugas" class="btn btn-primary">📅 Jadwal Tugas</a>
+
             <div class="col-6 col-md-3">
                 <a href="index.php?page=chat" class="btn btn-info w-100">💬 Chat</a>
             </div>
             <div class="col-6 col-md-3">
                 <a href="index.php?page=profile" class="btn btn-success w-100">🙍‍♂️ Profil</a>
             </div>
+             <div class="col-6 col-md-3">
+            <a href="index.php?page=upload-tugas" class="btn btn-success w-100">📤 Upload Tugas</a>
+        </div>
         </div>
     </div>
 </body>

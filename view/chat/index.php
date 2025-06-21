@@ -25,6 +25,10 @@
         <button type="submit" class="btn btn-primary">Kirim</button>
         <a href="index.php?page=dashboard" class="btn btn-secondary">Kembali</a>
     </form>
+    <a href="index.php?page=chat-private" class="btn btn-outline-primary mb-3">
+    🔒 Chat Privat
+</a>
 </div>
+
 </body>
 </html>

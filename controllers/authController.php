@@ -28,14 +28,12 @@ class AuthController {
     }
 
    public function register() {
-    echo "🚨 Fungsi register() terpanggil<br>";
 
     $error = '';
     $success = '';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // BARIS LOG UNTUK DEBUG
-        echo "<pre>"; print_r($_POST); echo "</pre>";
+        
 
         if ($_POST['password'] !== $_POST['confirm_password']) {
             $error = "Password tidak cocok!";

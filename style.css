@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.text-plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  /* Orange */
+  --orange: #ff6823;
+
+  /* Blue */
+  --blue: #213448;
+
+  /* Gradient Blue */
+  --gradient-blue: linear-gradient(to left, #547792, #213448);
+
+  /* Grey Background */
+  --grey-bg: #f3f7f6;
+
+  --dark-grey: #979c9e;
+
+  /* Orange Pastel */
+  --orange-pastel: #ffac37;
+
+  /* Blue Pastel */
+  --blue-pastel: #627d99;
+
+  /* Sky */
+  --sky: #e3e5e5;
+
+  /* Blue Pastel */
+  --blue-pastel: #c4dffa;
+
+  /* Success */
+  --success: #5dbc76;
+}
+
+/* Kelas untuk warna teks */
+.text-orange {
+  color: var(--orange) !important;
+}
+
+.text-orange-pastel {
+  color: var(--orange-pastel);
+}
+
+.text-blue {
+  color: var(--blue) !important;
+}
+
+.text-blue-pastel {
+  color: var(--blue-pastel) !important;
+}
+
+.text-grey {
+  color: var(--grey-bg) !important;
+}
+
+.text-sky {
+  color: var(--sky) !important;
+}
+
+.text-dark-grey {
+  color: var(--dark-grey) !important;
+}
+
+.text-orange-pastel {
+  color: var(--orange-pastel) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-gradient-blue {
+  background: var(--gradient-blue) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Kelas untuk background */
+.bg-orange {
+  background-color: var(--orange) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+
+.bg-grey {
+  background-color: var(--grey-bg) !important;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey) !important;
+}
+
+.bg-sky {
+  background-color: var(--sky) !important;
+}
+
+.bg-gradient-blue {
+  background: var(--gradient-blue) !important;
+}
+
+.bg-orange-pastel {
+  background-color: var(--orange-pastel) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-blue-pastel {
+  background-color: var(--blue-pastel) !important;
+}
+
+/* Kelas untuk border */
+.border-sky {
+  border: 1px solid var(--sky) !important;
+}
+
+.border-blue {
+  border: 1px solid var(--blue) !important;
+}
+
+.border-orange {
+  border: 1px solid var(--orange) !important;
+}
+
+.border-grey {
+  border: 2px solid var(--grey-bg) !important;
+}
+
+.regular-heading-bold {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.semibold-heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.bold-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.medium-heading {
+  font-size: 20px;
+}
+
+.subheading {
+  font-size: 18px;
+}
+
+.regular-text {
+  font-size: 16px;
+}
+
+.subtext {
+  font-size: 14px;
+}
+
+.xsmall-text {
+  font-size: 10px;
+}
+
+.small-text {
+  font-size: 8px;
+}
+
+.footer-text {
+  font-size: 10px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.semibold-text {
+  font-weight: 600;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}

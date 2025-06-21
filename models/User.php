@@ -52,4 +52,20 @@ class User {
         $stmt->bind_param("sssii", $data['nama'], $data['email'], $data['prodi'], $data['angkatan'], $id);
         return $stmt->execute();
     }
+    // models/User.php
+public function deleteById($id) {
+    $stmt = $this->koneksi->prepare("DELETE FROM users WHERE id = ?");
+    $stmt->bind_param("i", $id);
+    return $stmt->execute();
+}
+public function getAllExcept($excludeId) {
+    echo "<pre>Exclude ID: "; print_r($excludeId); echo "</pre>";
+    $stmt = $this->koneksi->prepare("SELECT * FROM users WHERE id != ?");
+    $stmt->bind_param("i", $excludeId);
+    $stmt->execute();
+    $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    echo "<pre>Result: "; print_r($result); echo "</pre>";
+    return $result;
+}
+
 }

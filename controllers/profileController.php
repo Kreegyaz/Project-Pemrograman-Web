@@ -34,4 +34,18 @@ class ProfileController {
 
         include __DIR__ . '/../view/profile/editProfile.php';
     }
+    public function delete(){
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $userModel = new User($this->koneksi);
+        $userId = $_SESSION['user']['id'];
+
+        if ($userModel->deleteById($userId)) {
+            session_destroy();
+            header("Location: index.php?page=login");
+            exit;
+        } else {
+            echo "<div class='alert alert-danger'>Gagal menghapus akun.</div>";
+        }
+    }
+}
 }

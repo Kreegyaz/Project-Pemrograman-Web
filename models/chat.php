@@ -16,4 +16,6 @@ class Chat {
         $stmt->bind_param("is", $userId, $message);
         return $stmt->execute();
     }
+
+    
 }

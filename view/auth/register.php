@@ -109,12 +109,6 @@
           class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#627D99] form-control"
           required
         />
-
-        <div class="text-right">
-          <a href="index.php?page=login" class="text-sm text-blue underline"
-            >Sudah Punya Akun?</a
-          >
-        </div>
         <!-- Log In Button -->
         <button
           id="actionButton"
@@ -123,6 +117,12 @@
         >
           Register
         </button>
+
+        <div class="text-center mt-4">
+          <a href="index.php?page=login" class="text-sm text-blue underline"
+            >Sudah Punya Akun?</a
+          >
+        </div>
       </form>
     </div>
 </body>

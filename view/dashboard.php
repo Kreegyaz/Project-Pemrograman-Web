@@ -44,11 +44,16 @@
             </section>
 
             <section class="mb-12">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                    <a href="index.php?page=upload-tugas" class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center">
-                        <div class="bg-red-700 rounded-full p-4 mb-3"><img src="assets/svg/classwork-icon.svg" class="w-8 h-8" alt="Jadwal Tugas"/></div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <a href="index.php?page=jadwal-tugas" class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center">
+                        <div class="bg-red-700 rounded-full p-4 mb-3"><img src="assets/svg/classes-icon.svg" class="w-8 h-8" alt="Jadwal Tugas"/></div>
                         <h3 class="font-semibold text-gray-800">Jadwal Tugas</h3>
                         <p class="text-xs text-gray-500 mt-1">Lihat semua dan Upload tugas.</p>
+                    </a>
+                    <a href="index.php?page=upload-tugas" class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center">
+                        <div class="bg-orange rounded-full p-4 mb-3"><img src="assets/svg/classwork-icon.svg" class="w-8 h-8" alt="Jadwal Tugas"/></div>
+                        <h3 class="font-semibold text-gray-800">Tambah Tugas</h3>
+                        <p class="text-xs text-gray-500 mt-1">Pemberian Penugasan dan Materi.</p>
                     </a>
                     <a href="index.php?page=chat-private" class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center">
                         <div class="bg-green-700 rounded-full p-4 mb-3"><img src="assets/svg/chat-icon.svg" class="w-8 h-8" alt="Chat"/></div>

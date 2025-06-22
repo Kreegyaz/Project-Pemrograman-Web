@@ -64,7 +64,7 @@
                         <button type="submit" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center">
                             Kirim Jawaban
                         </button>
-                        <a href="index.php?page=daftar-tugas" class="text-gray-600 bg-gray-100 hover:bg-gray-200 font-medium rounded-lg text-sm px-6 py-3 text-center border border-gray-300">
+                        <a href="index.php?page=upload-tugas" class="text-gray-600 bg-gray-100 hover:bg-gray-200 font-medium rounded-lg text-sm px-6 py-3 text-center border border-gray-300">
                             Kembali
                         </a>
                     </div>

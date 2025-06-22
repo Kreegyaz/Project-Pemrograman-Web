@@ -55,6 +55,12 @@
         >
           Log In
         </button>
+        <div class="mb-4">
+    <label class="flex items-center">
+        <input type="checkbox" name="remember_me" class="form-checkbox">
+        <span class="ml-2 text-gray-700">Ingat Saya</span>
+    </label>
+</div>
 
         <div class="text-center mt-10">
           <a href="index.php?page=register" class="text-sm text-blue underline"

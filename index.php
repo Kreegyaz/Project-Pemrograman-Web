@@ -36,12 +36,22 @@ function requireAuth() {
     }
 }
 
+
+function redirectIfLoggedIn() {
+    if (isLoggedIn()) {
+        header("Location: index.php?page=dashboard");
+        exit;
+    }
+}
+
 // Router
 switch ($page) {
     case 'login':
+         redirectIfLoggedIn();
         (new AuthController($koneksi))->login();
         break;
     case 'register':
+        redirectIfLoggedIn();
         (new AuthController($koneksi))->register();
         break;
     case 'logout':
@@ -49,8 +59,6 @@ switch ($page) {
         break;
     case 'dashboard':
         requireAuth();
-        echo "<h2>Selamat datang, " . htmlspecialchars($_SESSION['user']['nama']) . "</h2>";
-        echo '<br><a href="index.php?page=logout">Logout</a>';
         include __DIR__ . '/view/dashboard.php';
         break;
     case 'jadwal-tugas':

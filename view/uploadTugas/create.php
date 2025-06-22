@@ -1,38 +1,3 @@
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Upload Tugas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-<div class="container mt-5">
-    <h3>Upload Tugas</h3>
-    <form method="POST" enctype="multipart/form-data">
-        <div class="mb-3">
-            <label for="jadwal_tugas_id" class="form-label">Pilih Jadwal Tugas</label>
-            <select name="jadwal_tugas_id" id="jadwal_tugas_id" class="form-select" required>
-                <option value="">-- Pilih --</option>
-                <?php foreach ($jadwalList as $jadwal): ?>
-                    <option value="<?= $jadwal['id'] ?>"><?= htmlspecialchars($jadwal['nama_tugas']) ?></option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Upload File</label>
-            <input type="file" name="file_upload" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Atau Tulis Jawaban</label>
-            <textarea name="text_submission" rows="5" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Kirim</button>
-        <a href="index.php?page=dashboard" class="btn btn-secondary">Kembali</a>
-    </form>
-</div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -44,35 +9,19 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-gray-50 p-6 flex flex-col min-h-screen">
-    <header
-      class="fixed top-0 left-0 flex justify-between mb-5 items-center w-full p-5 bg-white"
-    >
-      <div class="flex items-center">
-        <img
-          class="w-10 h-10"
-          src="assets/svg/praktikom2-icon.svg"
-          alt=""
-        />
-        <h1 class="text-blue semibold-heading">PRAKTIKOM</h1>
-      </div>
-      <div class="flex w-full justify-evenly text-white">
-        <a href="index.php?page=dashboard"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Home</h1></a
-        >
-        <a href="index.php?page=upload-tugas"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Dashboard</h1></a
-        >
-        <a href="index.php?page=chat-private"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Chat</h1></a
-        >
-      </div>
-      <a href="index.php?page=profile">
-        <img
-          src="assets/svg/profile-icon.svg"
-          alt=""
-          class="w-8 h-8 m-1 p-1 bg-blue rounded-full"
-        />
-      </a>
+    <header class="fixed top-0 left-0 w-full z-20 bg-white shadow-md px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="assets/svg/praktikom2-icon.svg" alt="Logo Praktikom" class="w-10 h-10" />
+            <h1 class="text-2xl font-bold text-gradient-blue tracking-wide">PRAKTIKOM</h1>
+        </div>
+        <nav class="hidden md:flex space-x-30">
+            <a href="index.php?page=dashboard" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Home</a>
+            <a href="index.php?page=upload-tugas" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Dashboard</a>
+            <a href="index.php?page=chat-private" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Chat</a>
+        </nav>
+        <a href="index.php?page=profile" class="ml-4">
+            <img src="assets/svg/profile-icon.svg" alt="Profil" class="w-9 h-9 p-1 bg-gradient-blue rounded-full hover:scale-105 transition" />
+        </a>
     </header>
 
     <main class="flex-grow overflow-y-auto mt-20">

@@ -7,35 +7,19 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="p-6 w-screen relative">
-    <header
-      class="fixed top-0 left-0 flex justify-between mb-5 items-center w-full p-5 bg-white"
-    >
-      <div class="flex items-center">
-        <img
-          class="w-10 h-10"
-          src="assets/svg/praktikom2-icon.svg"
-          alt=""
-        />
-        <h1 class="text-blue semibold-heading">PRAKTIKOM</h1>
-      </div>
-      <div class="flex w-full justify-evenly text-white">
-        <a href="index.php?page=dashboard"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Home</h1></a
-        >
-        <a href="index.php?page=upload-tugas"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Dashboard</h1></a
-        >
-        <a href="index.php?page=chat-private"
-          ><h1 class="bg-blue px-6 py-2 rounded-full">Chat</h1></a
-        >
-      </div>
-      <a href="index.php?page=profile">
-        <img
-          src="assets/svg/profile-icon.svg"
-          alt=""
-          class="w-8 h-8 m-1 p-1 bg-blue rounded-full"
-        />
-      </a>
+    <header class="fixed top-0 left-0 w-full z-20 bg-white shadow-md px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="assets/svg/praktikom2-icon.svg" alt="Logo Praktikom" class="w-10 h-10" />
+            <h1 class="text-2xl font-bold text-gradient-blue tracking-wide">PRAKTIKOM</h1>
+        </div>
+        <nav class="hidden md:flex space-x-30">
+            <a href="index.php?page=dashboard" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Home</a>
+            <a href="index.php?page=upload-tugas" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Dashboard</a>
+            <a href="index.php?page=chat-private" class="bg-gradient-blue hover:scale-105 transition px-20 py-2 rounded-full text-white font-medium">Chat</a>
+        </nav>
+        <a href="index.php?page=profile" class="ml-4">
+            <img src="assets/svg/profile-icon.svg" alt="Profil" class="w-9 h-9 p-1 bg-gradient-blue rounded-full hover:scale-105 transition" />
+        </a>
     </header>
     
     <main>
